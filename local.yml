@@ -1,5 +1,4 @@
-- hosts: localhost
-  become: true
+- hosts: all
   tasks:
-  - name: Install htop
-    apt: name=htop
+    - name: Echo "Hello World"
+      command: echo "Hello World"
