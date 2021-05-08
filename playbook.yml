@@ -1,0 +1,8 @@
+- hosts: localhost
+  tasks:
+   - name: nano remove
+     apt: name=nano state=absent
+     become: yes
+   - name: vim install
+     apt: name=vim state=present
+     become: yes
